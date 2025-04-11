@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  db:
+    build:
+      context: .
+      dockerfile: docker/db/Dockerfile
+    ports:
+      - "5433:5432"
+    networks:
+      - app
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+networks:
+  app:
+
+
+volumes:
+  pgdata:
