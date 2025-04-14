@@ -4,7 +4,8 @@ CREATE TABLE movies (
                         description  TEXT,
                         director     VARCHAR(255),
                         release_year INTEGER,
-                        rating       INTEGER,
+                        photo       varchar(255),
+                        rating       INTEGER
 );
 
 CREATE TABLE users (
@@ -29,13 +30,8 @@ CREATE TABLE user_watchlist (
                                 PRIMARY KEY (user_id, movie_id)
 );
 
-CREATE TABLE roles (
-                       role_id SERIAL PRIMARY KEY,
-                       name    VARCHAR(50) NOT NULL UNIQUE
-);
-
-CREATE TABLE user_roles (
+CREATE TABLE user_types (
+                            type_id INTEGER NOT NULL REFERENCES types,
                             user_id INTEGER NOT NULL REFERENCES users,
-                            role_id INTEGER NOT NULL REFERENCES roles,
-                            PRIMARY KEY (user_id, role_id)
+                            PRIMARY KEY (type_id, user_id)
 );
