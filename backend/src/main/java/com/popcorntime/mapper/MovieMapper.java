@@ -7,10 +7,6 @@ import java.util.HashSet;
 import com.popcorntime.dto.AddMovieRequest;
 import com.popcorntime.dto.MovieDto;
 import com.popcorntime.model.Movie;
-import org.springframework.stereotype.Component;
-
-import java.util.ArrayList;
-import java.util.HashSet;
 
 @Component
 public class MovieMapper {
