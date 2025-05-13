@@ -1,6 +1,5 @@
 package com.popcorntime.service;
 
-import com.popcorntime.dto.MovieDto;
 import com.popcorntime.model.Movie;
 import com.popcorntime.model.User;
 import com.popcorntime.repository.UserRepository;

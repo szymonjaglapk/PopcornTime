@@ -17,12 +17,12 @@ public interface UserWatchedMoviesRepository extends JpaRepository<UserWatchedMo
     @Modifying
     @Transactional
     @Query("UPDATE UserWatchedMovies uwm SET uwm.liked = true WHERE uwm.user.userId = :userId AND uwm.movie.movie_id = :movieId")
-    void userLikeWatchedMovies(@Param("userId") Integer userId, @Param("movieId") Integer movieId);
+    void userLikeWatchedMovie(@Param("userId") Integer userId, @Param("movieId") Integer movieId);
 
     @Modifying
     @Transactional
     @Query("UPDATE UserWatchedMovies uwm SET uwm.liked = false WHERE uwm.user.userId = :userId AND uwm.movie.movie_id = :movieId")
-    void userUnLikeWatchedMovies(@Param("userId") Integer userId, @Param("movieId") Integer movieId);
+    void userUnLikeWatchedMovie(@Param("userId") Integer userId, @Param("movieId") Integer movieId);
 
     @Modifying
     @Transactional

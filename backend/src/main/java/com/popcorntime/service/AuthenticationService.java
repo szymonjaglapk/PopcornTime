@@ -34,8 +34,13 @@ public class AuthenticationService {
                 .password(passwordEncoder.encode(request.getPassword()))
                 .types(new HashSet<>())
                 .build();
+        // Type type = typeRepository.findByName(TypeEnum.TYPE_USER.name())
+        //         .orElse(Type.builder().name(TypeEnum.TYPE_USER.name()).build());
         Type type = typeRepository.findByName(TypeEnum.TYPE_USER.name())
-                .orElse(Type.builder().name(TypeEnum.TYPE_USER.name()).build());
+                .orElseGet(() -> typeRepository.save(
+                        Type.builder().name(TypeEnum.TYPE_USER.name()).build()
+                ));
+
         user.addType(type);
         repository.save(user);
         var jwtToken = jwtService.generateToken(user);
