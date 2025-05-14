@@ -1,0 +1,14 @@
+<svg width="200" height="220" viewBox="0 0 140 220" xmlns="http://www.w3.org/2000/svg">
+    <!-- Pojemnik -->
+    <path d="M30 140 L40 60 L100 60 L110 140 Z" fill="#FFD966" stroke="#000" stroke-width="4"/>
+    <path d="M50 60 L55 140" stroke="#E2584D" stroke-width="6"/>
+    <path d="M75 60 L80 140" stroke="#E2584D" stroke-width="6"/>
+    <!-- Popcorn -->
+    <circle cx="50" cy="50" r="12" fill="#FFF9E3" stroke="#000" stroke-width="2"/>
+    <circle cx="70" cy="35" r="14" fill="#FFF9E3" stroke="#000" stroke-width="2"/>
+    <circle cx="90" cy="50" r="12" fill="#FFF9E3" stroke="#000" stroke-width="2"/>
+    <!-- Tekst -->
+    <text x="70" y="200" font-size="26" font-family="Arial, sans-serif" fill="#E63946" text-anchor="middle" font-weight="bold">
+        PopcornTime
+    </text>
+</svg>
