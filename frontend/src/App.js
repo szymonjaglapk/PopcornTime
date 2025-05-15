@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import AdminPage from "./pages/AdminPage/AdminPage"
+import ProfilePage from "./pages/ProfilePage/ProfilePage"
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
     <Routes>
       <Route element={<PrivateRoutes />}>
         <Route element={<HomePage />} path="/homepage" />
+        <Route element={<ProfilePage />} path="/profile" />
       </Route>
       <Route element={<LoggedRoutes />}>
         <Route element={<LoginPage />} path="/" />

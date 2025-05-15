@@ -47,15 +47,16 @@ const HomePage = () => {
         <div className="content_main_top_title">Recommendations:</div>
         <div className="content_main_top">
           {recommendedMovies.map((movie) => (
-            <HomePageRecommendedMovie movie={movie} />
+            <HomePageRecommendedMovie key={movie.movie_id} movie={movie} />
           ))}
         </div>
         <div className="content_main_top_title">Best rated movies:</div>
-        <div className="content_main_bot">
+        <div className="content_main_top">
           {topThreeRatedMovies.map((movie) => (
-            <HomePageRecommendedMovie movie={movie} />
+            <HomePageRecommendedMovie key={movie.movie_id} movie={movie} />
           ))}
         </div>
+
       </ContentBox>
       </div>
     </>

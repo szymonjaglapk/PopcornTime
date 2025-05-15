@@ -6,6 +6,12 @@
   width: 100%;
   
 }
+.content_main_top{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+}
 
 .content_main {
   flex-grow: 1;

@@ -1,13 +1,14 @@
 .recommended-movie-container {
   width: 90%;
-  max-width: 500px;
+  max-width: 200px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-decoration: none;
   color: black;
   border: 1px solid rgba(154, 154, 154, 0.4);
   border-radius: 1em;
   overflow: hidden;
+  margin: 10px;
 }
 
 .movie-cover-container {
@@ -53,6 +54,11 @@
 }
 
 @media (max-width: 768px) {
+  .movie-cover-container img {
+    width: 30vw;
+    height: auto;
+    object-fit: cover;
+  }
   .recommended-movie-container {
     flex-direction: column;
   }

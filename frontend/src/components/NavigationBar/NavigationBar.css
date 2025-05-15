@@ -50,9 +50,10 @@
 
 
   .menu_element {
+    width: 30vw;
     flex-direction: row;
     font-size: 0.75em;
-    justify-content: stretch;
+    justify-content: space-between;
     align-items: center;
   }
 

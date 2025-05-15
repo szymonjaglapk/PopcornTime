@@ -1,0 +1,111 @@
+.profile-options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-options-button {
+  background-color: #c94c4c;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-options-button:hover {
+  background-color: #a93636;
+}
+
+.profile-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-admin-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile-admin-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-admin-block {
+  background-color: #fdf8f4;
+  border: 2px solid #d4bfa8;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.profile-admin-block[type="submit"],
+.profile-admin-block.button {
+  background-color: #c94c4c;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-admin-block[type="submit"]:hover,
+.profile-admin-block.button:hover {
+  background-color: #a93636;
+}
+
+.message {
+  margin-top: 1rem;
+  color: #0d5e1c;
+  text-align: center;
+  font-size: 0.95rem;
+  width: 100%;
+  background-color: #b5ffb6;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-admin-container {
+    padding: 1.5rem;
+    max-width: 90vw;
+  }
+
+  .profile-admin-block {
+    font-size: 1rem;
+  }
+
+  .profile-admin-block.button {
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+}

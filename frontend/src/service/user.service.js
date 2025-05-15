@@ -7,7 +7,6 @@ const isAdmin = async () => {
   return await axios
     .get(API_URL + "admin", { headers: authHeader() })
     .then((response) => {
-      console.log(response.data);
       return response.data;
     })
     .catch((error) => {
