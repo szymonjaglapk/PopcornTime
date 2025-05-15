@@ -3,10 +3,12 @@ import { Routes, Route } from "react-router-dom";
 
 import PrivateRoutes from "./utils/PrivateRoutes";
 import LoggedRoutes from "./utils/LoggedRoutes";
+import AdminRoutes from "./utils/AdminRoutes";
 
 import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
+import AdminPage from "./pages/AdminPage/AdminPage"
 
 import "./App.css";
 
@@ -20,6 +22,9 @@ function App() {
         <Route element={<LoginPage />} path="/" />
         <Route element={<LoginPage />} path="/login" />
         <Route element={<RegisterPage />} path="/register" />
+      </Route>
+      <Route element={<AdminRoutes />}>
+        <Route element={<AdminPage />} path="/admin" />
       </Route>
     </Routes>
   );

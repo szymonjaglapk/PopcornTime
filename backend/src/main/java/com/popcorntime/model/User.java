@@ -41,7 +41,7 @@ public class User implements UserDetails {
 
     public void addType(Type type) {
         types.add(type);
-        type.getUsers().add(this);
+//        type.getUsers().add(this);
     }
 
     public void removeType(Type type) {
