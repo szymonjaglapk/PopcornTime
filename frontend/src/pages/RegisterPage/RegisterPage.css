@@ -1,0 +1,135 @@
+.over-conteriner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f0e6; 
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.register-container {
+  width: 100%;
+}
+
+.register-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input {
+  background-color: #fdf8f4;
+  border: 2px solid #d4bfa8;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.button-auth {
+  background-color: #c94c4c;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-auth:hover {
+  background-color: #a93636;
+}
+
+.button-auth p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+div[role="alert"] {
+  margin-top: 1rem;
+  color: #c0392b;
+  text-align: center;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.add-info {
+  display: inline-block;
+  color: #a93636;
+  background-color: #f5e6e6;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.add-info:hover {
+  background-color: #f1d4d4;
+  color: #7a2424;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 90vw;
+    padding: 1.5rem;
+  }
+
+  .login-input {
+    font-size: 1rem;
+  }
+
+  .button-auth {
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+
+  .button-auth p {
+    font-size: 1.2rem;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+}
