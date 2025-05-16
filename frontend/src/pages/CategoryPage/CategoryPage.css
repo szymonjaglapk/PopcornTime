@@ -1,0 +1,27 @@
+.categoryName {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #558f6b;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.categoryMovies {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+  .categoryName {
+    font-size: 1.2em;
+  }
+
+  .categoryMovies {
+    padding: 0 1em;
+  }
+}
