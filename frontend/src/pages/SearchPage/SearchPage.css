@@ -1,0 +1,31 @@
+.searchBar {
+  width: 80%;
+  margin: 2rem auto 1.5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.searchContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  max-height: 75vh;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .searchBar {
+    width: 95%;
+    margin: 1rem auto;
+  }
+
+  .searchContent {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+}

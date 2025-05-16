@@ -13,6 +13,8 @@ import ProfilePage from "./pages/ProfilePage/ProfilePage"
 import MoviePage from "./pages/MoviePage/MoviePage";
 import CategoriesPage from "./pages/CategoriesPage/CategoriesPage"
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import ToWatchPage from "./pages/ToWatchPage/ToWatchPage";
+import SearchPage from "./pages/SearchPage/SearchPage";
 
 import "./App.css";
 
@@ -25,7 +27,8 @@ function App() {
         <Route element={<MoviePage />} path="/movie/:id" />
         <Route element={<CategoriesPage />} path="/categories" />
         <Route element={<CategoryPage />} path="/category/:categoryId" />
-
+        <Route element={<ToWatchPage />} path="/to_watch" />
+        <Route element={<SearchPage />} path="/search" />
       </Route>
       <Route element={<LoggedRoutes />}>
         <Route element={<LoginPage />} path="/" />
