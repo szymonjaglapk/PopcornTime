@@ -23,19 +23,21 @@ const SearchList = (props) => {
 
   const filteredData = allMovies.filter((movie) => {
     if (props.input === "") {
-      return movie;
+      return true;
     } else {
       return (
-        movie.title.toLowerCase().includes(props.input) ||
-        movie.author.toLowerCase().includes(props.input)
+        movie.title?.toLowerCase().includes(props.input.toLowerCase()) ||
+        movie.author?.toLowerCase().includes(props.input.toLowerCase())
       );
     }
   });
+
   return (
     <>
       {filteredData.map((movie) => (
-        <MovieListElement movie={movie} />
+        <MovieListElement key={movie.id} movie={movie} />
       ))}
+
     </>
   );
 };

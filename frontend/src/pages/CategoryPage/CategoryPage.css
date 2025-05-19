@@ -4,6 +4,7 @@
   color: #558f6b;
   margin-bottom: 1em;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .categoryMovies {
@@ -11,9 +12,9 @@
   flex-direction: column;
   gap: 1em;
   width: 100%;
-  max-width: 900px;
   margin: 0 auto;
   padding-bottom: 2em;
+  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {

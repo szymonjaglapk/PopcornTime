@@ -14,7 +14,7 @@ const SearchPage = () => {
   const [allMovies, setAllMovies] = useState();
 
   let inputHandler = (e) => {
-    var lowerCase = e.target.value.toLowerCase();
+    let lowerCase = e.target.value;
     setSearchInput(lowerCase);
     console.log(allMovies)
   };

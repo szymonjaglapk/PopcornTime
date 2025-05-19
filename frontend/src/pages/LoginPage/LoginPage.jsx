@@ -24,8 +24,8 @@ const LoginPage = () => {
   const form = useRef();
   const checkBtn = useRef();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("test@popcorntime.com");
+  const [password, setPassword] = useState("testpass");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 

@@ -12,6 +12,18 @@
   box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
 }
 
+.hamburger {
+  display: none;
+  background: none;
+  font-size: 2rem;
+  border: none;
+  color: #a93636;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2000;
+  cursor: pointer;
+}
 
 .menu_element {
   width: 15vw;
@@ -22,7 +34,6 @@
   justify-content: stretch;
   align-items: center;
   color: #a93636;
-
   text-decoration: none;
 }
 
@@ -35,32 +46,43 @@
   bottom: 1em;
 }
 
+/* Mobile view */
 @media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
   .nav_bar {
-    position: static;
-    top: 0;
+    display: none;
+    position: absolute;
+    top: 60px; /* just below the hamburger */
     left: 0;
     width: 100%;
+    height: auto;
+    background-color: #fff;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     z-index: 1000;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
 
+  .nav_bar.open {
+    display: flex;
+  }
 
   .menu_element {
-    width: 30vw;
+    width: 80vw;
     flex-direction: row;
-    font-size: 0.75em;
-    justify-content: space-between;
+    font-size: 1em;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .menu_element img {
     width: 24px;
     height: 24px;
-    margin: 0;
+    margin-right: 0.5em;
   }
 
   #logoutButton {
